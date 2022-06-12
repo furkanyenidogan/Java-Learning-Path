@@ -12,7 +12,7 @@ public class GradeAvg {
 
     public static double CalcAvg(int math, int history, int music,int turkish)
     {
-        return (math + history + music + turkish) / 4 ;
+        return (math + history + music + turkish) / 4;
     }
     
     public static void PassFunc()
@@ -27,10 +27,10 @@ public class GradeAvg {
         int music =Integer.parseInt(kb.nextLine());
         int turkish =Integer.parseInt(kb.nextLine());
         
+        System.out.println("Your grade average " + GradeAvg.CalcAvg(math, history, music, turkish));
+        pass = GradeAvg.CalcAvg(math, history, music, turkish) >= 60.0;
+        String result = pass?"Pass":"False";
         
-        pass = 60 >= GradeAvg.CalcAvg(math, history, music, turkish);
-        failed = 60 < GradeAvg.CalcAvg(math, history, music, turkish);
-        String result = pass ? "Pass":"Failed";
         System.out.println(result);
 
 
