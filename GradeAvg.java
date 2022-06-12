@@ -17,7 +17,7 @@ public class GradeAvg {
     
     public static void PassFunc()
     {
-        boolean pass, failed;
+        boolean pass;
 
         java.util.Scanner kb = new java.util.Scanner(System.in);
 
