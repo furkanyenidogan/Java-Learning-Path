@@ -1,3 +1,7 @@
+/*
+Program to calculate combination and factorial in Java
+*/
+
 public class Factorial {
     public static void main(String[] args) {
        int a = Factorial.combination(5, 2);
